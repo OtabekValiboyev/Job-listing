@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: 'League Spartan', sans-serif;
   font-size: 16px;
   background-color: #fff;
   color: #222;
@@ -24,8 +25,8 @@ body {
 .container {
   max-width: 100%;
   width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,4 +38,119 @@ img {
 
 .main-content {
   flex-grow: 1;
+  background-color: #effafa;
+  padding-top: 76px;
 }
+
+/* HEADER  */
+.header {
+  width: 100%;
+  height: 158px;
+  background: linear-gradient(rgba(81, 65, 226, 1), rgba(222, 57, 255, 1));
+}
+
+
+/* JOB  */
+.job-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 48px;
+  padding-left: 40px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+}
+
+.job-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+}
+
+.item-img {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  margin-right: 24px;
+}
+
+.item-left-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-left-inner-top {
+  display: flex;
+  align-items: center;
+}
+
+.item-left-inner-top span {
+  cursor: pointer;
+}
+
+.company-name {
+  color: #5ca5a5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 16px;
+}
+
+.work-status {
+  border-radius: 12px;
+  background: #5ca5a5;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.085px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.work-modern {
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.085px;
+  text-transform: uppercase;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  border-radius: 12px;
+  background: #2b3939;
+}
+
+.job-title {}
+
+.item-left-inner-bottom {}
+
+.job-posted {}
+
+.job-time {}
+
+.job-where {}
+
+.item-right {}
