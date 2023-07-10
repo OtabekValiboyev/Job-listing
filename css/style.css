@@ -45,9 +45,9 @@ img {
 
 /* HEADER  */
 .site-header {
-  height: 100%;
+  flex-shrink: 0;
   background-color: #5ca5a5;
-  max-height: 156px;
+  height: 156px;
 }
 
 
@@ -165,6 +165,7 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .item-left-inner-bottom {
