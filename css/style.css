@@ -40,13 +40,14 @@ img {
   flex-grow: 1;
   background-color: #effafa;
   padding-top: 76px;
+  padding-bottom: 120px;
 }
 
 /* HEADER  */
-.header {
-  width: 100%;
-  height: 158px;
-  background: linear-gradient(rgba(81, 65, 226, 1), rgba(222, 57, 255, 1));
+.site-header {
+  height: 100%;
+  background-color: #5ca5a5;
+  max-height: 156px;
 }
 
 
@@ -68,6 +69,14 @@ img {
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+}
+
+.job-item:first-child {
+  border-left: 5px solid #5CA5A5;
+}
+
+.job-item:nth-child(2) {
+  border-left: 5px solid #5CA5A5;
 }
 
 .job-item:not(:last-child) {
@@ -106,10 +115,13 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.company-name:not(:last-child) {
   margin-right: 16px;
 }
 
-.work-status {
+.job-status {
   border-radius: 12px;
   background: #5ca5a5;
   padding-left: 8px;
@@ -124,10 +136,13 @@ img {
   line-height: 14px;
   letter-spacing: -0.085px;
   text-transform: uppercase;
+}
+
+.job-status:not(:last-child) {
   margin-right: 8px;
 }
 
-.work-modern {
+.job-modern {
   color: #fff;
   font-size: 11px;
   font-style: normal;
@@ -143,14 +158,66 @@ img {
   background: #2b3939;
 }
 
-.job-title {}
+.job-title {
+  margin: 8px 0;
+  color: #2b3939;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
 
-.item-left-inner-bottom {}
+.item-left-inner-bottom {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-.job-posted {}
+.job-info {
+  display: flex;
+  align-items: center;
+  color: #7C8F8F;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.115px;
+}
 
-.job-time {}
+.job-info:not(:last-child) {
+  margin-right: 16px;
+}
 
-.job-where {}
+.job-info:not(:last-child)::after {
+  margin-left: 16px;
+  width: 4px;
+  height: 4px;
+  background-color: #b7c4c4;
+  content: "";
+}
 
-.item-right {}
+.item-right {
+  display: flex;
+  align-items: center;
+}
+
+.job-button {
+  border: 0;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  /* rgba(92, 165, 165, 1) */
+  background-color: rgba(92, 165, 165, 0.1);
+  color: #5ca5a5;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
+.job-button:not(:last-child) {
+  margin-right: 16px;
+}
